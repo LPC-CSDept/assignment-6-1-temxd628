@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "g++ A61.cpp && ./a.out",
+      "input": "2 10",
+      "output": "[\\w, \\W,\\n]*2[\\w,\\W,\\n]*3[\\w,\\W\\,\\n]*5[\\w,\\W,\\n]*7[\\w,\\W,\\n]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "g++ A61.cpp && ./a.out",
+      "input": "50 60",
+      "output": "[\\w, \\W, \\n]*53[\\w,\\W,\\n]*59[\\w,\\W\\,\\n]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T3",
+      "setup": "",
+      "run": "g++ A61.cpp && ./a.out",
+      "input": "50 40\r\n10 20",
+      "output": "[\\w, \\W, \\n]*11[\\w,\\W,\\n]*13[\\w,\\W\\,\\n]*17[\\w,\\W,\\n]*19[\\w,\\W,\\n]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
